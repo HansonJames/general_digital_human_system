@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+
+# Virtual Environment
+venv/
+
+# IDE
+.idea/
+.vscode/
+
+# Project specific
+.env
+temp/
+no_upload/
+promotional_articles/
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+
+# Other Files
+

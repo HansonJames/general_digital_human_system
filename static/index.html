@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>智慧仙女数字人平台</title>
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/static/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/microsoft-cognitiveservices-speech-sdk@latest/distrib/browser/microsoft.cognitiveservices.speech.sdk.bundle-min.js"></script>
+</head>
+<body>
+<div class="main-container">
+    <div class="header">
+        <h1>欢迎来到智慧仙女数字人平台</h1>
+    </div>
+    
+    <div class="knowledge-section">
+        <select id="knowledgeSelect" title="选择知识库">
+            <option value="">选择知识库</option>
+        </select>
+        <input type="file" id="fileInput" style="display: none;" accept=".txt,.doc,.docx,.pdf">
+        <button class="upload-btn" onclick="document.getElementById('fileInput').click()">上传文档</button>
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+        <div class="progress-status"></div>
+    </div>
+
+    <div class="content-container">
+        <div class="chat-container">
+            <div id="responseArea"></div>
+        </div>
+
+        <div class="video-container">
+            <!-- 视频元素将在这里动态插入 -->
+        </div>
+    </div>
+</div>
+
+<div id="loading" class="loading">加载中...</div>
+
+<div id="userSendArea">
+    <div class="input-container">
+        <input type="text" id="chatInput" placeholder="请输入问题或点击麦克风语音输入">
+        <button style="width:50px;font-size:20px;" title="点击开始语音输入">🎤</button>
+    </div>
+    <select id="voiceSelect" style="width:120px;">
+        <optgroup label="标准语音">
+            <option value="zh-CN-XiaochenMultilingualNeural" selected>晓辰-标准女声</option>
+            <option value="zh-CN-XiaoyuMultilingualNeural">晓雨-温柔女声</option>
+            <option value="zh-CN-XiaoxiaoNeural">晓晓-甜美女声</option>
+        </optgroup>
+        <optgroup label="方言语音">
+            <option value="zh-HK-HiuMaanNeural">晓敏-粤语女声</option>
+            <option value="zh-TW-HsiaoChenNeural">晓陈-台湾女声</option>
+            <option value="zh-CN-shaanxi-XiaoniNeural">晓妮-陕西女声</option>
+            <option value="zh-CN-liaoning-XiaobeiNeural">晓北-东北女声</option>
+        </optgroup>
+    </select>
+    <select id="avatarSelect" style="width:120px;">
+        <option value='{"character":"lisa","style":"casual-sitting"}'>Lisa</option>
+        <option value='{"character":"Lori","style":"graceful"}' selected>Lori</option>
+    </select>
+</div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
