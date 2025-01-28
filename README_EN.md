@@ -7,7 +7,7 @@
 The General Digital Human System is an intelligent interaction platform built on cutting-edge AI technologies, integrating speech recognition, speech synthesis, natural language processing, and digital avatar rendering. The system supports real-time voice dialogue, knowledge Q&A, and emotional synchronization, making it suitable for various scenarios such as intelligent customer service, education training, and digital exhibitions.
 
 ## precautions
-Due to the use of Microsoft's real-time speech synthesis and virtual image services in this project, the required cost is relatively high. Please be cautious when using them. Even if you hang up and don't answer questions, fees may still be deducted. Due to the lack of consumption limit function in Microsoft services, I have been unexpectedly charged over 2800 yuan and am currently recovering it. Please use it with caution.
+Due to the use of Microsoft's real-time speech synthesis and virtual image services in this project, the required cost is relatively high. Please be cautious when using them. 
 
 ### Project Highlights
 
